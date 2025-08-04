@@ -21,6 +21,7 @@ Premium smart temperature converter PWA
 - **Shareable Result Cards**: Theme-matched share cards and QR invites for polished sharing.  
 - **Performance Optimized**: Snappy UI, desktop+mobile responsive, minimal load footprint.
 
----
 
-## 📦 Installation (Local / Developer)
+             ##*********************************************************************************************************************************************##
+
+
