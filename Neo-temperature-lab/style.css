@@ -1,5 +1,5 @@
 /* =cccc================== THEME ===========cccc======== */
-/* Hide page scrollbar but keep scrolling */
+/* Hide page scrollbar  */
 html,
 body {
     height: 100%;
@@ -745,8 +745,9 @@ body.premium select:focus {
         }
     }
 
-    /* Optional: if buttons live in a container, make it responsive automatically.
-   (No HTML change needed; applies to any parent having data-actions or class .action-bar) */
+
+    /*action bar*/
+
     .action-bar,
     [data-actions="buttons"] {
         display: grid;
@@ -2727,4 +2728,8 @@ kbd:hover {
     .footer-right {
         text-align: center;
     }
+
 }
+
+
+/* --------------------------------------The End -----------------------------------*/
