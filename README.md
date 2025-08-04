@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://neotemp.netlify.app/banner.jpg" alt="Neo Temperature Lab banner" width="100%">
+  <img src="https://neotemp.netlify.app/banner.jpg" alt="Neo Temperature Lab Banner" style="max-width: 100%;">
 </p>
+
 
 <h1 align="center">🌡️ Neo Temperature Lab</h1>
 
