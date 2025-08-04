@@ -1,21 +1,47 @@
-MIT License
+MIT License – Extended Version
+Version 1.1 – August 2025
 
 Copyright (c) 2025 Soumyadip Ghosh
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the “Software”), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. **Attribution Requirement**  
+   The above copyright notice, author name (Soumyadip Ghosh), and this permission notice
+   shall be included in all copies or substantial portions of the Software, whether in
+   source code form or binary form.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. **Modifications**  
+   If you modify the Software and distribute it, you must clearly state in the
+   documentation or source comments that the Software has been modified and include
+   the date of modification.
+
+3. **No Trademark License**  
+   This License does not grant permission to use the trade names, trademarks, service
+   marks, or product names of the copyright holder, except as required for reasonable
+   and customary use in describing the origin of the Software.
+
+4. **No Patent License**  
+   This License does not grant any rights to patents owned by the author(s), except to
+   the extent necessary to use, modify, and distribute the Software as permitted herein.
+
+5. **Warranty Disclaimer**  
+   THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+   CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE
+   OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+6. **Jurisdiction**  
+   Any disputes arising under or in connection with this License shall be subject to
+   the exclusive jurisdiction of the courts located in the country/state of the author.
+
+---
+
+For more information about this license, visit:  
+https://opensource.org/licenses/MIT
