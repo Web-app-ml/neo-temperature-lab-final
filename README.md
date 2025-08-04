@@ -84,8 +84,7 @@ Other converters are:
 ```bash
 git clone https://github.com/Web-app-ml/neo-temperature-lab-final.git
 cd neo-temperature-lab-final
-npm install
-npm run dev
+
 ```
 
 ---
