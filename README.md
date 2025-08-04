@@ -1,5 +1,3 @@
-# neo-temperature-lab-final
-Premium smart temperature converter PWA
 # 🌡️ Neo Temperature Lab
 
 **Neo Temperature Lab** is a premium, offline-capable Progressive Web App for ultra-fast, accurate temperature conversions with smart input, theme personalization, shareable cards/QRs, history export, and more — built for both power users and everyday use.
@@ -21,7 +19,11 @@ Premium smart temperature converter PWA
 - **Shareable Result Cards**: Theme-matched share cards and QR invites for polished sharing.  
 - **Performance Optimized**: Snappy UI, desktop+mobile responsive, minimal load footprint.
 
+---
 
-             *************************************************************************************************************************
+## 📦 Installation (Local / Developer)
 
-
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/Web-app-ml/neo-temperature-lab-final.git
+   cd neo-temperature-lab
