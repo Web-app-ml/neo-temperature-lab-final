@@ -1,0 +1,27 @@
+{
+  "id": "/#app",
+  "name": "Neo Temperature Lab",
+  "short_name": "Neo°",
+  "description": "Premium PWA temperature converter with smart input, theme modes (Gold/Rose/Platinum), offline support, QR share cards, precision control, analytics, CSV export, and instant multi-scale results.",
+  "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
+  "background_color": "#0b0a07",
+  "theme_color": "#f6d66b",
+  "categories": ["utilities"],
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

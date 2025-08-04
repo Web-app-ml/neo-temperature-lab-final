@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <!-- Primary SEO -->
+    <title>Neo Temperature Lab – Premium Smart Temperature Converter PWA</title>
+    <meta name="description"
+        content="Ultra-fast installable temperature converter PWA. Smart input (e.g., '37 C to F'), offline support, premium themes, shareable QR result cards, precision control, and exportable history." />
+    <meta name="author" content="Soumyadip Ghosh" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://neotemp.netlify.app/" />
+
+    <!-- Optional keywords (modern engines mostly ignore but okay to keep concise) -->
+    <meta name="keywords"
+        content="temperature converter, smart input converter, NeoTemp, PWA temperature tool, Celsius to Fahrenheit, offline converter" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Neo Temperature Lab – Premium Smart Temperature Converter PWA" />
+    <meta property="og:description"
+        content="Convert temperatures instantly with smart input, premium themes, offline support, and shareable QR result cards." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neotemp.netlify.app/" />
+    <meta property="og:image" content="https://neotemp.netlify.app/neo-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Neo Temperature Lab – Premium Temperature Converter PWA" />
+    <meta property="og:site_name" content="Neo Temperature Lab" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Neo Temperature Lab – Premium Smart Temperature Converter PWA" />
+    <meta name="twitter:description"
+        content="Premium PWA temperature converter with smart input, offline use, QR share cards, and advanced analytics." />
+    <meta name="twitter:image" content="https://neotemp.netlify.app/neo-preview.jpg" />
+    <!-- If you have a Twitter handle, uncomment and set -->
+    <!-- <meta name="twitter:site" content="@yourhandle" /> -->
+    <!-- <meta name="twitter:creator" content="@yourhandle" /> -->
+
+    <!-- PWA manifest & theme -->
+    <link rel="manifest" href="/manifest.webmanifest?v=3" />
+    <meta name="theme-color" content="#f6d66b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Neo°" />
+
+    <!-- Favicons / icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+    <link rel="alternate icon" href="/favicon.ico?v=3" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Performance: preconnect / preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://neotemp.netlify.app/#organization",
+        "name": "Neo Temperature Lab",
+        "url": "https://neotemp.netlify.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://neotemp.netlify.app/web-app-manifest-512x512.png",
+          "width": 512,
+          "height": 512
+        },
+        "alternateName": [
+          "NeoTemp Lab",
+          "Neo TempLab",
+          "NeoTemperatureLab",
+          "Neo Temp Converter",
+          "NeoTemp",
+          "Neo°",
+          "NeoTemp Pro",
+          "TempLab"
+        ],
+        "sameAs": [
+          "https://github.com/Web-app-ml"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://neotemp.netlify.app/#website",
+        "url": "https://neotemp.netlify.app/",
+        "name": "Neo Temperature Lab",
+        "description": "Premium PWA temperature converter with smart input, theme modes, offline support, and shareable QR result cards.",
+        "publisher": {
+          "@id": "https://neotemp.netlify.app/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://neotemp.netlify.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://neotemp.netlify.app/#app",
+        "name": "Neo Temperature Lab",
+        "alternateName": [
+          "NeoTemp Lab",
+          "Neo Temp Converter",
+          "NeoTemp",
+          "Neo°",
+          "TempLab"
+        ],
+        "url": "https://neotemp.netlify.app/",
+        "description": "Convert temperatures across Celsius, Fahrenheit, Kelvin, Rankine, Réaumur with smart input, themes, offline use, and shareable QR result cards.",
+        "applicationCategory": "Utilities",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "installUrl": "https://neotemp.netlify.app/",
+        "screenshot": [
+          "https://neotemp.netlify.app/neo-preview.jpg"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://neotemp.netlify.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Neo Temperature Lab?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neo Temperature Lab is a premium Progressive Web App for temperature conversion with smart input, theme modes, offline support, QR share cards, analytics, and exportable history."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I perform a conversion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Type smart input like '37 C to F' or enter values manually. Use shortcuts to swap units, copy results, or clear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I share my conversion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Generate a themed share card with a QR code or share the result directly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Neo Temperature Lab is installable and works offline via its service worker."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the premium features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Features include smart input, premium themes, auto-copy, analytics, favorites, precision control, and CSV export."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+
+<body>
+    <noscript>
+        <div class="noscript">This app needs JavaScript enabled.</div>
+    </noscript>
+
+    <!-- Background & Particles -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-blob" aria-hidden="true"></div>
+    <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+    <main class="shell">
+
+        <header class="topbar card tilt" data-tilt data-tilt-max="4">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">
+                    <img src="favicon-96x96.png" alt="" class="logo-img"
+                        onload="this.closest('.logo').classList.add('has-img')"
+                        onerror="this.closest('.logo').classList.add('img-error')" />
+                    <span class="logo-fallback">🌡️</span>
+                </div>
+
+                <div class="titles">
+                    <h1>Neo Temperature Lab</h1>
+                    <p>Futuristic · Fast · Precise</p>
+                </div>
+            </div>
+
+            <nav class="actions">
+                <!-- Premium toggle -->
+                <label class="premium-toggle">
+                    <input id="premiumSwitch" type="checkbox" />
+                    <span class="slider"></span>
+                    <span class="label">Enable Premium Mode</span>
+                </label>
+
+                <!-- Premium micro-themes -->
+                <div id="premiumThemeWrap" class="premium-theme-wrap" hidden>
+                    <label class="mini">
+                        <span>Theme</span>
+                        <select id="premiumTheme" aria-label="Premium theme">
+                            <option value="gold">Classic Gold</option>
+                            <option value="rose">Rose Gold</option>
+                            <option value="platinum">Platinum</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button id="copyLinkBtn" class="btn ghost" title="Copy shareable link">Copy Link</button>
+                <button id="clearAllBtn" class="btn ghost" title="Reset everything">Reset All</button>
+                <button id="inviteBtn" class="btn ghost" title="Invite a friend via QR">Invite Friend</button>
+            </nav>
+        </header>
+
+        <!-- Premium ribbon -->
+        <div class="ribbon" aria-hidden="true">
+            <svg viewBox="0 0 400 60" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="g1" x1="0" x2="1">
+                        <stop offset="0" stop-color="#5d4e2a" />
+                        <stop offset="0.25" stop-color="#c1a96e" />
+                        <stop offset="0.5" stop-color="#f6e27a" />
+                        <stop offset="0.75" stop-color="#c1a96e" />
+                        <stop offset="1" stop-color="#5d4e2a" />
+                    </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="60" fill="url(#g1)" />
+            </svg>
+            <div class="ribbon-wrap">
+                <div class="neo-ribbon"><span class="neo-ribbon__text">PREMIUM</span></div>
+            </div>
+        </div>
+
+        <!-- Converter -->
+        <section class="card hero tilt" data-tilt>
+            <div class="hero-head">
+                <span class="pill" id="statusPill" aria-live="polite">Ready</span>
+                <div class="hint" id="hint" role="status" aria-live="polite"></div>
+            </div>
+
+            <!-- Parser++ -->
+            <div class="row">
+                <div class="field grow">
+                    <label for="powerInput">Smart input: <code>37 C to F</code>, <code>98.6F</code>, or
+                        <code>100 C -> all</code></label>
+                    <input id="powerInput" autocomplete="off"
+                        placeholder="Try: 310 K to °C, 451F to K, 25 reaumur to c, or 100 C -> all" />
+                </div>
+            </div>
+
+            <!-- Classic controls -->
+            <div class="row controls">
+                <div class="field">
+                    <label for="inputValue">Value</label>
+                    <input id="inputValue" type="number" inputmode="decimal" step="any" placeholder="Enter value…" />
+                </div>
+
+                <!-- From: native + premium custom -->
+                <div class="field">
+                    <label for="fromUnit">From</label>
+                    <select id="fromUnit" aria-label="From unit" class="native-select">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                        <option value="R">Rankine (°R)</option>
+                        <option value="Re">Réaumur (°Re)</option>
+                    </select>
+
+
+
+
+                    <!-- Premium: custom searchable select -->
+                    <div id="fromCustom" class="gold-select" hidden>
+                        <button type="button" class="gold-select__btn" aria-haspopup="listbox" aria-expanded="false"
+                            data-for="from">
+                            <span class="gold-select__icon">°C</span><span class="gold-select__label">Celsius</span>
+                            <span class="gold-select__chev">▼</span>
+                        </button>
+                        <div class="gold-select__panel" role="listbox" tabindex="-1">
+                            <input class="gold-select__search" type="text" placeholder="Search unit…"
+                                aria-label="Search unit" />
+                            <ul class="gold-select__list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <button id="swapBtn" class="btn swap" title="Swap (From ⇄ To)" aria-label="Swap units">⇄</button>
+
+
+                <!-- To: native + premium custom -->
+                <div class="field">
+                    <label for="toUnit">To</label>
+
+                    <!-- Native dropdown -->
+                    <select id="toUnit" name="toUnit" aria-label="To unit" class="native-select">
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="C">Celsius (°C)</option>
+                        <option value="K">Kelvin (K)</option>
+                        <option value="R">Rankine (°R)</option>
+                        <option value="Re">Réaumur (°Re)</option>
+                    </select>
+
+                    <!-- Premium gold-select -->
+                    <div id="toCustom" class="gold-select" hidden>
+                        <button type="button" class="gold-select__btn" aria-haspopup="listbox" aria-expanded="false"
+                            data-for="to">
+                            <span class="gold-select__icon">°F</span>
+                            <span class="gold-select__label">Fahrenheit</span>
+                            <span class="gold-select__chev">▼</span>
+                        </button>
+
+                        <div class="gold-select__panel" role="listbox" tabindex="-1">
+                            <label for="toUnitSearch" class="visually-hidden">Search unit</label>
+                            <input id="toUnitSearch" name="toUnitSearch" class="gold-select__search" type="text"
+                                placeholder="Search unit…" aria-label="Search unit" autocomplete="off" />
+                            <ul class="gold-select__list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Precision Area -->
+                <div class="precision">
+                    <div class="precision-labels">
+                        <label for="precision" class="precision-main-label">Precision</label>
+                        <span id="precision-desc" class="visually-hidden">
+                            Set number of decimal places for conversion results (0 to 8)
+                        </span>
+                    </div>
+                    <div class="precision-wrap">
+                        <div class="range-wrapper">
+                            <label for="precision" class="visually-hidden">Precision slider</label>
+                            <input id="precision" class="neo-slider" type="range" min="0" max="8" value="2"
+                                aria-labelledby="precision-main-label" aria-describedby="precision-desc" />
+                        </div>
+                        <div class="number-wrapper">
+                            <label for="precisionNum" class="visually-hidden">Precision number input</label>
+                            <input id="precisionNum" class="neo-num" type="number" min="0" max="8" value="2"
+                                aria-label="Precision, number of decimal places" aria-describedby="precision-desc" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="toggles pro">
+                    <!-- Premium check: Significant figures -->
+                    <label class="neo-check sm" for="sigfigs">
+                        <input type="checkbox" id="sigfigs" class="neo-check__input" />
+                        <span class="neo-check__box" aria-hidden="true"></span>
+                        <span class="neo-check__text">Use significant figures</span>
+                    </label>
+
+
+                    <!-- Premium check: Auto scientific -->
+                    <label class="neo-check sm" for="scientific">
+                        <input type="checkbox" id="scientific" class="neo-check__input" />
+                        <span class="neo-check__box" aria-hidden="true"></span>
+                        <span class="neo-check__text">Auto scientific notation</span>
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- Result -->
+            <div class="result">
+                <div class="result-line">
+                    <div class="result-text">
+                        <div class="caption">Converted Result</div>
+                        <div id="resultText" class="value" aria-live="polite">—</div>
+                    </div>
+                    <div class="result-actions">
+                        <button id="favBtn" class="btn ghost" title="Save as favorite pair">☆ Favorite</button>
+                        <button id="copyBtn" class="btn ghost" title="Copy result">Copy</button>
+                        <button id="shareCardBtn" class="btn ghost" title="Generate share card (PNG)">Share
+                            Card</button>
+                        <button id="resetBtn" class="btn ghost" title="Clear inputs">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium tools -->
+            <div class="pro-tools" id="proTools" hidden>
+                <div class="pro-title">Premium Tools</div>
+                <div class="pro-grid">
+
+                    <!-- Neo Toggle (Gold/Rose/Platinum aware) -->
+                    <label class="neo-toggle sm" for="autoCopy">
+                        <input id="autoCopy" type="checkbox" class="neo-toggle__input" role="switch"
+                            aria-label="Auto-copy result on convert" />
+                        <span class="neo-toggle__track" aria-hidden="true">
+                            <span class="neo-toggle__thumb"></span>
+                        </span>
+                        <span class="neo-toggle__text">Auto‑copy result on convert</span>
+                    </label>
+
+                    <label class="neo-toggle sm" for="soundFx">
+                        <input id="soundFx" type="checkbox" class="neo-toggle__input" role="switch"
+                            aria-label="Sound / Haptics" />
+                        <span class="neo-toggle__track" aria-hidden="true">
+                            <span class="neo-toggle__thumb"></span>
+                        </span>
+                        <span class="neo-toggle__text">Sound / Haptics</span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Favorites -->
+            <div class="favorites" id="favoritesBar" hidden>
+                <div class="fav-head">
+                    <h3>Favorites</h3>
+                    <button id="clearFavs" class="btn ghost small" title="Clear favorites">Clear</button>
+                </div>
+                <div id="favChips" class="chips"></div>
+            </div>
+
+            <!-- Analytics (local) -->
+            <div class="analytics" id="analytics" hidden>
+                <h3>Premium Analytics (Local)</h3>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="k">Total Converts</div>
+                        <div id="statTotal" class="v">0</div>
+                    </div>
+                    <div class="stat">
+                        <div class="k">Most Used Pair</div>
+                        <div id="statTopPair" class="v">—</div>
+                    </div>
+                    <div class="stat">
+                        <div class="k">Avg Precision</div>
+                        <div id="statAvgP" class="v">—</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matrix -->
+        <section class="card matrix tilt" data-tilt>
+            <header class="matrix-head">
+                <h2>All Units at a Glance</h2>
+                <p class="muted">Your current value converted to every scale</p>
+            </header>
+            <div class="table-wrap">
+                <table aria-describedby="matrix table of conversions">
+                    <thead>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Value</th>
+                            <th>Absolute Zero</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matrixBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section class="card history tilt" data-tilt>
+            <div class="history-head">
+                <h2>History</h2>
+                <div class="history-actions">
+                    <button id="exportCSV" class="btn ghost small" title="Export as CSV">Export CSV</button>
+                    <button id="clearHistoryBtn" class="btn ghost small" title="Clear history">Clear</button>
+                </div>
+            </div>
+            <ul id="historyList" class="history-list" aria-live="polite"></ul>
+        </section>
+
+       
+        <section id="app-info" class="premium-section">
+            <h2 class="section-title">About & Support</h2>
+        
+            <!-- Hidden SEO keywords for typo/variant search -->
+            <div style="display:none; visibility:hidden;">
+                NeoTemp, Neo Temp, neotemp, neo temp app, neotemplab, NeoTemperatureLab, Neo Temperature App,
+                TempLab, temp lab, tempu, neo tempu, neo temp converter, neotemp converter,
+                neotemp pro, neo temperature converter, smart temperature converter, premium temperature converter,
+                temperature convertor, temprature converter, temp convert, temp cnverter, temp conveter,
+                neo tempreture lab, neotempature lab, temperature app, temp tool, c to f converter, f to c converter,
+                kelvin converter, rankine converter, reaumur converter,
+                NeoTemperature, NeoTemp Premium, temp calc, temp calculator, Celsius to Fahrenheit,
+                Fahrenheit to Celsius, Kelvin to Celsius, Kelvin to Fahrenheit
+            </div>
+        
+            <!-- About this App -->
+            <details>
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="10" stroke-width="2" />
+                        <path d="M12 16v-4" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="12" cy="8" r="1" stroke-width="2" />
+                    </svg>
+                    About this App
+                </summary>
+                <div class="faq-content animate-fade">
+                    <p>
+                        <strong>Neo Temperature Lab</strong> is a premium, modern Progressive Web App for instant,
+                        highly accurate temperature conversions—optimized so it appears for searches like
+                        “NeoTemp,” “Neo Temp App,” “temperature converter,” or even common misspellings like
+                        “temprature convertor” or “temp lab.”
+                    </p>
+                    <p>
+                        Supports <strong>Celsius (°C), Fahrenheit (°F), Kelvin (K), Rankine (°R)</strong>, and
+                        <strong>Réaumur (°Re)</strong> with customizable precision and scientific formatting.
+                    </p>
+                    <p>
+                        Includes four visual modes—Normal, Gold, Rose Gold, and Platinum—with sound, haptic feedback,
+                        and auto-copy features. Favorites, “All Units at a Glance,” and absolute zero references make
+                        it a powerful, professional tool.
+                    </p>
+                    <p>
+                        Smart Input lets you type natural queries like <code>37 C to F</code> or <code>98.6F</code>
+                        without selecting units manually. Full conversion history, CSV export, and offline support
+                        via PWA service workers are built in.
+                    </p>
+                    <p>
+                        Share results with theme-matched cards or QR invites that reflect the app’s UI mode for a
+                        polished and consistent brand look.
+                    </p>
+                </div>
+            </details>
+        
+            <!-- How to Use -->
+            <details>
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    How to Use
+                </summary>
+                <div class="faq-content animate-fade">
+                    <ol style="list-style: none; padding-left: 0; margin-left: 0;">
+                        <li>Open <strong>Neo Temperature Lab</strong> in your browser or install it for an app-like experience.
+                        </li>
+                        <li>Choose a theme (Gold, Rose Gold, Platinum, Normal) for a personalized look.</li>
+                        <li>Enter values directly or use Smart Input (e.g., <code>37 C to F</code>) for instant results.</li>
+                        <li>Use shortcuts: <kbd>Ctrl/Cmd + K</kbd> to swap units, <kbd>Enter</kbd> to copy, <kbd>Esc</kbd> to
+                            clear.</li>
+                        <li>View “All Units at a Glance” for complete scale conversions, including absolute zero.</li>
+                        <li>Save favorites, export history to CSV, and use analytics to track conversions.</li>
+                    </ol>
+                    <p>
+                        Optimized for desktop & mobile, works offline after first load, with real-time sound and haptic feedback
+                        in premium mode.
+                    </p>
+                </div>
+            </details>
+        
+            <!-- Need Help -->
+            <details>
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="10" stroke-width="2" />
+                        <path d="M9.5 9.5h.01M14.5 9.5h.01M12 14.5c-2 0-3.5 1-3.5 2v.5h7v-.5c0-1-1.5-2-3.5-2Z"
+                            stroke-width="2" />
+                    </svg>
+                    Need Help
+                </summary>
+                <div class="faq-content animate-fade">
+                    <p><strong>Support & FAQs</strong></p>
+                    <ul>
+                        <li><strong>Offline use:</strong> Works without internet after installation.</li>
+                        <li><strong>Free core features:</strong> Premium themes and tools enhance the experience.</li>
+                        <li><strong>Units:</strong> °C, °F, K, °R, °Re with precision & scientific formatting.</li>
+                        <li><strong>Sharing:</strong> Send result cards or QR codes that match your theme.</li>
+                        <li><strong>Smart Input:</strong> Instantly processes shorthand like “98.6F” or “100 C to K.”</li>
+                    </ul>
+                    <p>
+                        Still need help? Search for <em>Neo Temperature Lab Converter</em>, “NeoTemp,” or “temp converter app”
+                        on Google to find tutorials and support.
+                    </p>
+                </div>
+            </details>
+        </section>
+
+        
+       
+        <footer class="footer" aria-label="Site footer">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="branding">
+                        <span class="brand-name">Neo Temperature Lab</span>
+                        <span class="version">v1.0</span>
+                        <span class="separator">•</span>
+                        <span class="updated">Last updated: Aug 1, 2025</span>
+                    </div>
+                    <div class="keyboard-tips">
+                        Supported: <strong>°C · °F · K · °R · °Re</strong> • Tips:
+                        <kbd>Ctrl/Cmd+K</kbd> swap,
+                        <kbd>Enter</kbd> copy,
+                        <kbd>Esc</kbd> clear
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <span class="author">
+                        Built by
+                        <a href="https://github.com/Web-app-ml" target="_blank" rel="noopener noreferrer" class="tooltip">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" width="18"
+                                height="18" style="margin-right:6px;" />
+                            Soumyadip Ghosh
+                            <span class="tooltip-text">View on GitHub</span>
+                        </a>
+                    </span>
+                    <span class="home-link">
+                        &copy; 2024–2025 <a href="https://neotemp.netlify.app/">Neo Temperature Lab</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </main>
+
+    <!-- PWA Install Button -->
+    <div id="install-wrapper">
+        <button id="install-btn" aria-label="Install App" title="Install Neo Temperature Lab">
+            <!-- SVG is dynamically added via JS -->
+        </button>
+    </div>
+
+
+    <!-- QR code generator load before app.js -->
+
+    <!-- Scripts -->
+    <script defer src="./lib/qrcode.min.js?v=1"></script>
+    <script defer src="app.min.js?v=2"></script>
+    <script defer src="install.js?v=1"></script>
+
+</body>
+
+</html>
