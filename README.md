@@ -25,5 +25,5 @@
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/Web-app-ml/neo-temperature-lab-final.git
+   git clone (https://github.com/Web-app-ml/neo-temperature-lab-final.git)
    cd neo-temperature-lab
