@@ -1,79 +1,110 @@
-# 🌡️ Neo Temperature Lab
+<p align="center">
+  <img src="https://yourdomain.com/banner.png" alt="Neo Temperature Lab banner" width="100%">
+</p>
 
-**Neo Temperature Lab** is a premium, offline-capable Progressive Web App for ultra-fast, accurate temperature conversions with smart input, theme personalization, shareable cards/QRs, history export, and more — built for both power users and everyday users.  
+<h1 align="center">🌡️ Neo Temperature Lab</h1>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-neo--temperature--lab-blue?style=for-the-badge)](https://neotemp.netlify.app/)
-[![PWA Ready](https://img.shields.io/badge/PWA-Ready-brightgreen?style=for-the-badge&logo=pwa)](https://neotemp.netlify.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Made by Soumyadip Ghosh](https://img.shields.io/badge/Made%20By-Soumyadip%20Ghosh-orange?style=for-the-badge)](https://github.com/Web-app-ml)
+<p align="center">
+  <strong>A premium offline-first PWA for ultra-fast, smart temperature conversions.</strong>
+</p>
 
----
-
-## 📜 Table of Contents
-1. [Key Features](#-key-features)
-2. [Live Demo](#-live-demo)
-3. [Screenshots](#-screenshots)
-4. [Tech Stack](#-tech-stack)
-5. [Installation](#-installation-local--developer)
-6. [Usage](#-usage)
-7. [Keyboard Shortcuts](#-keyboard-shortcuts)
-8. [PWA Installation](#-pwa-installation)
-9. [Contributing](#-contributing)
-10. [License](#-license)
-11. [Author](#-author)
+<p align="center">
+  <a href="https://neotemp.netlify.app/">✨ Live Demo</a> • 🏠 Installable PWA • 🌐 Works Offline
+</p>
 
 ---
 
-## 🚀 Key Features
+## ✨ Key Features
 
-- **Smart Input**: Type natural queries like `37 C to F`, `98.6F`, `100 C to K` — no manual unit selection needed.
-- **Multi-Scale Conversion**: Celsius (°C), Fahrenheit (°F), Kelvin (K), Rankine (°R), Réaumur (°Re) with customizable precision.
-- **Premium Themes**: Normal, Gold, Rose Gold, and Platinum — with sound & haptic feedback.
-- **Auto-Copy & Shortcuts**: Enter to copy, `Ctrl/Cmd + K` to swap units, `Esc` to clear.
-- **All Units at a Glance**: See all conversions including absolute zero.
-- **Favorites & History**: Save frequent conversions, view and export CSV.
-- **Offline Ready**: Installable PWA — works seamlessly offline.
-- **Shareable Result Cards**: Create beautiful theme-matched cards with QR codes.
-- **Performance Optimized**: Snappy UI, desktop+mobile responsive.
-
----
-
-## 🌐 Live Demo
-🔗 **[Open Neo Temperature Lab](https://neotemp.netlify.app/)**
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f504.svg" width="20" /> Feature             | Description                                                   |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9ea.svg" width="20" /> Smart Input         | Natural queries like "100 F to C", no manual selection needed |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f321.svg" width="20" /> Multi-Scale Support | °C, °F, K, °R, °Re with precision control                     |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3a8.svg" width="20" /> Premium Themes      | Gold, Rose Gold, and Platinum themes with SFX & haptics       |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2328.svg" width="20" /> Keyboard Shortcuts   | Ctrl/Cmd + K (Swap), Enter (Copy), Esc (Clear)                |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d1.svg" width="20" /> All-at-once Display | Simultaneous display of all units with absolute zero refs     |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2b50.svg" width="20" /> Favorites            | Save and reuse frequent conversions instantly                 |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4c4.svg" width="20" /> History + Export    | Conversion log with CSV export                                |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4f6.svg" width="20" /> Offline Support     | True PWA — always ready, always fast                          |
+| <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4f7.svg" width="20" /> Shareable Cards     | Polished share cards with QR code support                     |
 
 ---
 
-## 📸 Screenshots
+## 📸 Preview
 
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop Screenshot](https://neotemp.netlify.app/desktop-preview.jpg) | ![Mobile Screenshot](https://neotemp.netlify.app/mobile-preview.jpg) |
-
----
-
-## 🛠 Tech Stack
-
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-- **PWA:** Service Workers, Web App Manifest
-- **Build Tools:** None (Lightweight, native)
-- **Hosting:** Netlify
+<p align="center">
+  <img src="./demo.gif" alt="Neo Temperature Lab Demo" width="600" />
+</p>
 
 ---
 
-## 📦 Installation (Local / Developer)
+## 🔮 Tech Stack
+
+* ⚡ **Vite** — Lightning-fast build tool
+* 🎯 **Vanilla JS + CSS3** — Clean, optimized
+* 🎨 **Custom Themes** — Theme switching with variables
+* 💾 **Service Workers** — Offline capabilities
+* 🚀 **Netlify** — Blazing-fast deployment
+* ✅ **ESLint + Prettier** — Code quality assured
+
+---
+
+## 📱 Install Instructions
+
+1. Open the [Live App](https://neotemp.netlify.app/)
+2. Tap the Install icon (Add to Home Screen / Desktop)
+3. Launch from your device launcher
+
+> ✨ Enjoy a near-native experience built on modern web power!
+
+---
+
+## 🫠 Why Neo Temperature Lab?
+
+Other converters are:
+
+* ❌ Slow or outdated
+* ❌ Limited in scale
+* ❌ No themes or offline mode
+
+**Neo Temp Lab is:**
+
+* ✅ Beautiful and snappy
+* ✅ Multi-scale and intelligent
+* ✅ Premium-themed and fully offline
+
+---
+
+## 🤝 Feedback & Contributions
+
+* Have ideas or found bugs? [Submit an issue](https://github.com/Web-app-ml/neo-temperature-lab-final/issues)
+* Want to improve it? Fork & PRs welcome!
+
+---
+
+## 📦 Developer Installation
 
 ```bash
-# 1️⃣ Clone the repo
 git clone https://github.com/Web-app-ml/neo-temperature-lab-final.git
-
-# 2️⃣ Move into the project folder
 cd neo-temperature-lab-final
+npm install
+npm run dev
+```
 
-# 3️⃣ Open with VS Code (or your editor)
-code .
+---
 
-# Move into the project folder
-cd neo-temperature-lab-final
+## 🛡 License
 
-# Open in VS Code (or preferred editor)
-code .
+MIT — Use it, build on it, enhance it!
+
+---
+
+<p align="center">
+  Built with ❤️ by <a href="https://github.com/Web-app-ml">Soumyadip Ghosh</a> • © 2024–2025 Neo Temperature Lab
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/deployments/Web-app-ml/neo-temperature-lab-final/netlify?label=Netlify%20Deploy" />
+  <img src="https://img.shields.io/github/last-commit/Web-app-ml/neo-temperature-lab-final" />
+  <img src="https://img.shields.io/github/issues/Web-app-ml/neo-temperature-lab-final" />
+</p>
